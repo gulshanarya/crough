@@ -1,4 +1,5 @@
 //compile cmd with warning and errors message: gcc source.c -Wall -o opt
+//singly linked list implementation
 #include<stdio.h>
 #include<stdlib.h>
 #include<math.h>
