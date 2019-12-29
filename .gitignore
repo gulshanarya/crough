@@ -3,7 +3,10 @@
 *.o
 
 #ignoring extension less files
-*	#ignore everything
-!*.*	#not ignore files with extension
-!*/	#not ignore any directory
+#ignore everything
+*	
+#not ignore files with extension
+!*.*
+#not ignore any directory	
+!*/	
 
