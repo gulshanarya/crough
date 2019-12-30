@@ -65,6 +65,106 @@ void InsertAtN(int pos, int data) {
     tmp->next = tmp2->next;
     tmp2->next = tmp;
 
+    if(tmp->next != NULL) //not inserting at the end of list
+        tmp->next->prev = tmp;
+
+}
+
+void DeletionAtBegin() {
+    if(head == NULL) {
+        printf("Underflow\n");
+        return;
+    }
+
+    if(head->next == NULL) { //only one node in the list
+        free(head);
+        head = NULL;
+        return;
+    }
+
+    struct Node* tmp = head;
+    head = head->next;
+    head->prev = NULL;
+
+    free(tmp);
+}
+
+void DeletionAtEnd() {
+
+    if(head == NULL) {
+        printf("OVERFLOW\n");
+        return;
+    }
+
+    if(head->next == NULL) { //if there is only one node
+        free(head);
+        head = NULL;
+        return;
+    }
+
+    struct Node* tmp = head;
+    while(tmp->next != NULL) {
+        tmp = tmp->next;
+    }
+
+    tmp->prev->next = NULL;
+    free(tmp);
+}
+
+void DeleteNode(int data) { //deleting node with the specified data
+
+    if(head == NULL) {
+        printf("OVERFLOW\n");
+        return;
+    }
+
+    if(head->next == NULL) { //if there is only one node
+        if(data = head->data) {
+            free(head);
+            head = NULL;
+            return;
+        } else {
+            printf("No any elements matched with %d!", data);
+            return;
+        }
+    }
+
+    struct Node* tmp = head;
+    while(tmp->data != data) {
+        tmp = tmp->next;
+        if(tmp == NULL) {
+            printf("No any elements matched with %d!\n", data);
+            return;
+        }
+    }
+
+    tmp->prev->next = tmp->next;
+    if(tmp->next != NULL) { //not deleting the last node of list
+        tmp->next->prev = tmp->prev;
+    }
+
+    free(tmp);
+}
+
+int Pos(int data) {
+
+    if(head == NULL) {
+        return -1;
+    }
+    int pos = 0;
+    struct Node* tmp = head;
+    while(tmp->data != data) {
+
+        tmp = tmp->next;
+
+        if(tmp == NULL) {//checking end of list
+            return -1;
+        }
+
+        pos++;
+    }
+
+    return pos;
 }
 
 void printNode() {
@@ -75,12 +175,15 @@ void printNode() {
         tmp = tmp->next;
     }
 }
+
 int main() {
 
 
+        printf("%d\n", Pos(20));
     InsertAtN(0, 3);
     InsertAtN(1, 10);
-    InsertAtBegin(2);
+    InsertAtN(2, 20);
+    InsertAtEnd(65);
 
     printNode();
     return 0;

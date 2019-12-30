@@ -1,7 +1,5 @@
 #ignoring files:
 
-*.o
-
 #ignoring extension less files
 #ignore everything
 *	
@@ -9,4 +7,7 @@
 !*.*
 #not ignore any directory	
 !*/	
+
+*.o
+opt
 
