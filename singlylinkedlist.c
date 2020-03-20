@@ -126,13 +126,12 @@ void InsertAtN(int pos, int data) {
     }
 
     struct Node* tmp = head;
-    while(pos != 1) {
+    while(--pos != 0) {
         tmp = tmp->next;
         if(tmp == NULL) {
             printf("Out of Index\n");
             return;
         }
-        pos--;
     }
 
     newNode->next = tmp->next;
@@ -158,6 +157,8 @@ int main() {
 
 
     InsertAtN(0, 5);
+    InsertAtN(1, 8);
+    InsertAtN(1, 9);
 
     PrintNode();
 	return 0;
