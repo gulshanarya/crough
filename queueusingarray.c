@@ -60,6 +60,19 @@ void Print() {
     printf("%d ", queue[tmp]);
 }
 
+void Print2() {
+    //print using for loop
+    if(rear == -1) {
+        printf("Empty queue to print");
+        return;
+    }
+    int i;
+    for(i = front; i != rear; i=(i+1)%len) {
+       printf("%d ", queue[i]);
+    }
+    printf("%d ", queue[i]);
+}
+
 int main() {
     Insert(45);
 
