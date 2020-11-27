@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1575637736 source:/home/imgulshanarya/Documents/CProject/DS MyCodeSchool/InfixToPostfixUsingStack/list.c
+	<stdlib.h>
+	<stdarg.h>
+	<stdio.h>
+	"list.h"
+
+1575637746 /home/imgulshanarya/Documents/CProject/DS MyCodeSchool/InfixToPostfixUsingStack/list.h
+
+1575638177 source:/home/imgulshanarya/Documents/CProject/DS MyCodeSchool/InfixToPostfixUsingStack/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdarg.h>
+	"list.h"
+

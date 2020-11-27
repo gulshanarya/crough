@@ -1,0 +1,48 @@
+# depslib dependency file v1.0
+1575050715 source:c:\users\gulshan arya\desktop\cproject\ds mycodeschool\balancedparanthesisusingstack\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdarg.h>
+	"list.h"
+
+1575046779 
+
+1575046608 c:\users\gulshan arya\desktop\cproject\ds mycodeschool\balancedparanthesisusingstack\list.h
+
+1575046779 source:c:\users\gulshan arya\desktop\cproject\ds mycodeschool\balancedparanthesisusingstack\list.c
+	<stdlib.h>
+	<stdarg.h>
+	<stdio.h>
+	"list.h"
+
+1575046779 source:/media/imgulshanarya/New Volume/desktop/CProject/DS MyCodeSchool/BalancedParanthesisUsingStack/list.c
+	<stdlib.h>
+	<stdarg.h>
+	<stdio.h>
+	"list.h"
+
+1575046608 /media/imgulshanarya/New Volume/desktop/CProject/DS MyCodeSchool/BalancedParanthesisUsingStack/list.h
+
+1575050878 source:/media/imgulshanarya/New Volume/desktop/CProject/DS MyCodeSchool/BalancedParanthesisUsingStack/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdarg.h>
+	"list.h"
+
+1575046779 source:/home/imgulshanarya/Documents/CProject/DS MyCodeSchool/BalancedParanthesisUsingStack/list.c
+	<stdlib.h>
+	<stdarg.h>
+	<stdio.h>
+	"list.h"
+
+1575046608 /home/imgulshanarya/Documents/CProject/DS MyCodeSchool/BalancedParanthesisUsingStack/list.h
+
+1575050878 source:/home/imgulshanarya/Documents/CProject/DS MyCodeSchool/BalancedParanthesisUsingStack/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdarg.h>
+	"list.h"
+

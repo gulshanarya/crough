@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1575400609 source:/media/imgulshanarya/New Volume/desktop/CProject/DS MyCodeSchool/EvalPreFixAndPostFixUsingStack/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdarg.h>
+	"list.h"
+
+1575400636 /media/imgulshanarya/New Volume/desktop/CProject/DS MyCodeSchool/EvalPreFixAndPostFixUsingStack/list.h
+
+1575400693 source:/home/imgulshanarya/Documents/CProject/DS MyCodeSchool/EvalPreFixAndPostFixUsingStack/list.c
+	<stdlib.h>
+	<stdarg.h>
+	<stdio.h>
+	"list.h"
+
+1575400636 /home/imgulshanarya/Documents/CProject/DS MyCodeSchool/EvalPreFixAndPostFixUsingStack/list.h
+
